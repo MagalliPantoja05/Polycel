@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polycel - Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img class="logo" src="imagenes/logo.png" alt="Logo de Polycel" width="150" height="100"> Grupo Polycel </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="traductor">
+                    <ul>
+                        <li><a href="#">ESP</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linea-azul"></div>
+        </header>
+
+        <main>
+            <section class="contacto-principal">
+              <div class="informacion-contacto">
+                <h2>¿Tienes un proyecto</h2>
+                <h3>en mente?</h3>
+                <p>En Grupo Polycel estamos comprometidos con brindarte la mejor atención y servicio. Por eso, ponemos a tu disposición diversos canales de contacto para que puedas comunicarte con nosotros con facilidad y rapidez.</p>
+
+                <div class="datos-contacto">
+                  <p>
+                    <img src="iconos/phone-call.png" alt="Ícono de teléfono" width="20" height="20">
+                    +52 55 5694 8054
+                  </p>
+
+                  <p>
+                    <img src="iconos/envelope.png" alt="Ícono de correo electrónico" width="20" height="20">
+                    polycel@hotmail.com
+                  </p>
+
+                  <p>
+                    <img src="iconos/marker.png" alt="Ícono de ubicación" width="20" height="20">
+                    Av. Canal del Moral 16, C.P. 09300
+                  </p>
+
+                  <p>
+                    <img src="iconos/home.png" alt="Ícono de ciudad" width="20" height="20">
+                    Iztapalapa, CDMX, México
+                  </p>
+                </div>
+
+
+              </div>
+            <div class="formulario"> 
+                <h3 class="titulo-contacto">Formulario de Contacto</h3>
+                <form>
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                    
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>                
+                    </fieldset>
+                   
+                    <fieldset>
+                        <legend>¿En cuál horario prefiere ser atendido?</legend>
+                        <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>09h ~ 19h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <label class="checkbox"><input type="checkbox" checked>Acepto el Aviso de Privacidad.</label>                                   
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </form>
+            </div>      
+        </main>
+
+        <footer>
+            <div class="container">
+            <div class="logo-copyright">
+                <img src="imagenes/logo-blanco.png" alt="Logo de Polycel" width="150" height="150">
+                <p class="copyright">&copy; Polycel De México S.A. DE C.V. (México)</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Polycel" target="_blank" class="facebook">
+                    <img src="iconos/facebook.png" alt="Ícono de facebook" width="20" height="20">                </a>
+                <a href="https://www.youtube.com/@polycelu.s.a.2377" target="_blank" class="youtube">
+                    <img src="iconos/play.png" alt="Ícono de youtube" width="20" height="20">
+                </a>
+                <a href="https://www.linkedin.com/company/grupo-polycel/" target="_blank" class="linkedin">
+                    <img src="iconos/linkedin.png" alt="Ícono de linkedin" width="20" height="20">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61557621333216" target="_blank" class="reclutamiento">
+                    <img src="iconos/briefcase.png" alt="Ícono de reclutamiento" width="20" height="20">
+                </a>
+            </div>
+            <div>
+                <ul class="aviso">
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

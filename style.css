@@ -1,0 +1,470 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("imagenes/background.png");
+}
+
+header {
+  padding: 20px 0;
+}
+
+.caja{
+    width: 550px;
+    margin: 0 85px; 
+}
+
+.linea-azul {
+  width: 100%; 
+  height: 3px; 
+  background-color: #0c2444; 
+  margin-top: 20px; 
+}
+
+/* Traducción */
+.traductor {
+    display: flex;
+    position: absolute;
+    top:50px;
+    right: 0;
+}
+
+.traductor ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.traductor li {
+    display: inline;
+    margin: 0 0 0 15px;
+    right: 10px;
+    padding-right: 20px;
+}
+
+.traductor a {
+  text-decoration: none; 
+  color: #333333; 
+  font-weight: bold; 
+}
+
+.traductor a:hover {
+  color: #007bff;
+}
+
+
+/*.logo{
+
+}*/
+
+/* Apartado de opciones*/
+nav{
+    display: flex;
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    right: 10px;
+    padding-right: 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #0c2444;
+    text-decoration: underline;
+}
+
+/*Productos*/
+.descripcion p{
+    margin: 2em;
+    text-align: center;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color:#2fb6c2;
+}
+
+.productos li:active{
+    border-color:#000000;
+}
+
+.productos h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 22px;
+}
+
+
+/*Pie de página*/
+footer {
+    background-color: #0c2444;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links i {
+    font-size: 24px;
+}
+
+.logo-copyright {
+    display: flex;
+    align-items: center;
+}
+
+.logo-copyright img {
+    margin-right: 20px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 0;
+}
+
+.aviso {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aviso li {
+    margin-right: 20px;
+}
+
+.aviso a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.aviso a:hover{
+    color: #2fb6c2;
+    text-decoration: underline;
+}
+
+/*Formulario*/
+.contacto-principal {
+  display: flex;
+  margin: 40px 0;
+}
+
+.informacion-contacto {
+  flex: 1; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.informacion-contacto h2 {
+  color: #144284;
+  font-size: 3em;
+  font-weight: bold; 
+}
+
+.informacion-contacto h3 {
+  color: #2fb6c2;
+  font-size: 3em;
+  font-weight: bold; 
+  margin-bottom: 15px; 
+}
+
+.informacion-contacto p {
+  font-size: 20px;
+  line-height: 1.5; 
+  margin: 15px;
+}
+.datos-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.datos-contacto p {
+  font-size: 20px; 
+  margin-bottom: 5px; 
+}
+
+.datos-contacto p img {
+  margin-right: 10px; 
+  vertical-align: middle; 
+}
+
+form{
+    margin: 20px 0;
+    color: #144284;
+    font-weight: bold;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #2fb6c2;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: #3691c9;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aquí inicia el CSS para nuestra del Inicio*/
+.banner {
+  padding: 0 3em;
+  position: relative;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 47px;
+  font-weight: bold;
+  padding: 30px 30px;
+  margin-left: 85px;
+}
+
+/* Información*/
+.principal{
+  padding: 3em 0;
+  background: #FEFEFE;
+  width: 940px;
+  margin: 0 auto; 
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+.titulo-secundario{
+  text-align: center;
+  font-size: 2em;
+}
+
+.titulo-contacto{
+  color: #144284;
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+.principal p{
+  margin: 0 0 1em;
+}
+
+.principal strong{
+  font-weight: bold;
+}
+
+.principal em{
+  font-style: italic;
+}
+
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu-lateral {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: static;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-lateral a:hover {
+  background-color: #eee;
+}
+
+.menu-lateral .active a {
+  background-color: #0c2444;
+  color: white;
+}
+
+.contenido-principal {
+  padding: 20px;
+}
+
+.seccion {
+  display: none;
+}
+
+.seccion.active {
+  display: block;
+}
+
+.imagen-y-texto {
+  display: flex; 
+  align-items: center;
+  max-width: 900px;
+}
+
+.lista-valores{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.lista-productos{
+    display: none;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content:"★"
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+
+/* Ubicación */
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Video*/
+.video{
+    padding: 3em 0;
+    margin: 1em 1em 1em 1em;
+    width: 940px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .video {
+        width: auto;
+    }
+}
+
