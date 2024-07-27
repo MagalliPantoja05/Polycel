@@ -8,8 +8,8 @@ header {
 }
 
 .caja{
-    width: 550px;
-    margin: 0 85px; 
+    width: 30%;
+    margin: 0 55px; 
 }
 
 .linea-azul {
@@ -51,37 +51,75 @@ header {
 }
 
 
-/*.logo{
-
-}*/
+.logo{
+width: 40%;
+max-width: 150px;
+max-height: 100px;
+min-width: 100px;
+min-height: 50px;
+}
 
 /* Apartado de opciones*/
 nav{
     display: flex;
     position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
     top:110px;
     right: 0;
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-    right: 10px;
-    padding-right: 20px;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+  right: 10px;
+  padding-right: 20px;
 }
 
-nav a:hover{
-    color: #0c2444;
-    text-decoration: underline;
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
 }
+
+nav a:hover {
+  color: #0c2444;
+  text-decoration: underline;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 20%;
+    top:100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+    margin: 3%;
+  }
+
+  nav a{
+    font-size: 15px;
+  }
+}
+
 
 /*Productos*/
 .descripcion p{
@@ -90,17 +128,20 @@ nav a:hover{
 }
 
 .productos{
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px;
+}
+
+.productos img{
+    width: 100%;
 }
 
 .productos li{
     display: inline-block;
     text-align: center;
-    width: 30%;
+    width: 20%;
     vertical-align: top;
-    margin: 0 1.5%;
+    margin: 1.5%;
     padding: 20px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -109,6 +150,37 @@ nav a:hover{
 
 .productos li:hover{
     border-color:#2fb6c2;
+}
+
+.productos li .nombre-producto {  /* Seleccionamos el elemento con la clase "nombre-producto" */
+    cursor: pointer;  /* Cambiar el cursor a mano al pasar sobre el texto */
+}
+
+.productos li:hover .nombre-producto,
+.productos li:hover img {
+  display: none; /* Ocultamos la imagen y el título al pasar el mouse */
+}
+
+.productos li:hover .info-producto {
+  display: block; /* Mostramos la información */
+  position: relative; /* Posicionamos la información en relación a su contenedor */
+  top: 0; /* Ajusta la posición vertical si es necesario */
+  left: 0; /* Ajusta la posición horizontal si es necesario */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.productos li .info-producto { /* Estilo para el div.info-producto */
+    display: none; /* Oculta el div inicialmente */
+    position: absolute; /* Posicionamiento relativo al elemento padre */
+    top: 100%; /* Ubicación vertical debajo del elemento padre */
+    left: 0; /* Ubicación horizontal a la izquierda del elemento padre */
+    width: 100%; /* Ancho del div */
+    background-color: #fff; /* Color de fondo */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1; /* Posiciona el div sobre otros elementos */
 }
 
 .productos li:active{
@@ -122,6 +194,21 @@ nav a:hover{
 
 .productos li:hover h2{
     font-size: 22px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .productos li{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
 }
 
 
@@ -295,14 +382,16 @@ td,th{
     padding: 8px 15px;
 }
 
-/*Aquí inicia el CSS para nuestra del Inicio*/
+/*Banner*/
 .banner {
   padding: 0 3em;
   position: relative;
+  width: 90%
 }
 
 .texto-banner {
   position: absolute;
+  width: 80%;
   top: 70%;
   left: 0;
   transform: translateY(-50%);
@@ -314,12 +403,29 @@ td,th{
   margin-left: 85px;
 }
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .texto-banner {
+  position: absolute;
+  width: 70%;
+  top: 60%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 33px;
+  font-weight: bold;
+  padding: 30px 30px;
+  margin-left: 85px;
+  }
+}
+
 /* Información*/
 .principal{
   padding: 3em 0;
   background: #FEFEFE;
-  width: 940px;
-  margin: 0 auto; 
+  width: 85%;
+  margin-left: 85px;
 }
 
 .titulo-principal{
@@ -331,6 +437,12 @@ td,th{
 .titulo-secundario{
   text-align: center;
   font-size: 2em;
+}
+
+.texto-secundario{
+  text-align: center;
+  font-size: 1em;
+  padding: 2%;
 }
 
 .titulo-contacto{
@@ -351,21 +463,39 @@ td,th{
   font-style: italic;
 }
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .principal{
+  width: 90%;
+  }
+
+  .principal p{
+  width: 90%;
+  font-size: 16px;
+  }
+}
+
 .contenedor {
   display: flex;
   align-items: flex-start;
 }
 
+.contenedorTec {
+  display: flex;
+}
+
 .menu-lateral {
-  width: 200px;
+  width: 20%;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 10px;
   position: static;
 }
 
 .menu-lateral ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-lateral li {
@@ -390,6 +520,7 @@ td,th{
 
 .contenido-principal {
   padding: 20px;
+  font-size: 23px;
 }
 
 .seccion {
@@ -400,6 +531,105 @@ td,th{
   display: block;
 }
 
+.masInfo{
+    width: 20%;
+    padding: 3%;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background: #2fb6c2;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.masInfo:hover{
+    background: #3691c9;
+}
+
+.menu-lateral-Tec {
+  width: 35%;
+  background-color: #f0f0f0;
+  position: static;
+}
+
+.menu-lateral-Tec ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral-Tec li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral-Tec a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.menu-lateral-Tec a:hover {
+  background-color: #eee;
+}
+
+.menu-lateral-Tec .active a {
+  background-color: #0c2444;
+  color: white;
+}
+
+.contenido-principalTec {
+  font-size: 15px;
+  padding: 5%;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-lateral-Tec {
+  width: 40%;
+  background-color: #f0f0f0;
+  position: static;
+  padding: 10px;
+  }
+
+  .menu-lateral-Tec ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .menu-lateral-Tec li {
+    margin-bottom: 10px;
+  }
+
+  .menu-lateral-Tec a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+  }
+
+  .menu-lateral-Tec a:hover {
+    background-color: #eee;
+  }
+
+  .menu-lateral-Tec .active a {
+    background-color: #0c2444;
+    color: white;
+  }
+
+  .contenido-principalTec {
+  font-size: 10px;
+  padding: 2%;
+  }
+}
+
 .imagen-y-texto {
   display: flex; 
   align-items: center;
@@ -407,7 +637,6 @@ td,th{
 }
 
 .lista-valores{
-    width: 40%;
     display: inline-block;
     vertical-align: top;
     padding: 20px;
@@ -427,7 +656,7 @@ td,th{
     content:"★"
 }
 
-.items:first-child{
+.items{
     font-weight: bold;
 }
 
@@ -444,27 +673,23 @@ td,th{
 }
 
 .mapa-contenido{
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
 }
 
 /*Video*/
 .video{
     padding: 3em 0;
-    margin: 1em 1em 1em 1em;
-    width: 940px;
-    margin: 0 auto;
 }
 
-@media screen and (max-width:480px){
-    h1{
-        text-align: center;
-    }
-    nav{
-        position: static;
-    }
-    .caja, .principal, .mapa-contenido, .video {
-        width: auto;
-    }
+.video-contenido{
+    width: 100%;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .video{
+    width: 100%;
+  }
 }
 
