@@ -47,7 +47,7 @@ header {
 }
 
 .traductor a:hover {
-  color: #007bff;
+  color: #007bbff;
 }
 
 
@@ -97,9 +97,9 @@ nav a:hover {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   nav {
-    flex-direction: column;
+    
     margin-bottom: 5%;
     width: 20%;
     top:100px;
@@ -113,6 +113,14 @@ nav a:hover {
   nav a{
     font-size: 12px;
   }
+
+  nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 }
 
 
@@ -192,7 +200,7 @@ nav a:hover {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .productos li{
     display: inline-block;
     text-align: center;
@@ -277,7 +285,7 @@ footer {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   footer {
     padding: 10px 0;
  }
@@ -474,7 +482,7 @@ td,th{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .banner {
   padding-left: 7%;
   position: relative;
@@ -482,7 +490,7 @@ td,th{
   }
 
   .texto-banner {
-  top: 30%;
+  top: 45%;
   width: 80%;
   position: absolute;
   transform: translateY(-30%);
@@ -540,7 +548,7 @@ td,th{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .principal{
   width: 90%;
   margin-left: 25px;
@@ -671,7 +679,7 @@ td,th{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .menu-lateral-Tec {
   width: 20%;
   background-color: #f0f0f0;
@@ -766,7 +774,7 @@ td,th{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .video{
     width: 100%;
   }
